@@ -2,15 +2,14 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Header from './containers/header/header';
+import Body from './containers/body/body';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Header />
-        <p className="App-intro">
-          Hey, baby nora
-        </p>
+        <Body />
       </div>
     );
   }
