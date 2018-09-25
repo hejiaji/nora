@@ -1,10 +1,16 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import profilePic from '../../assets/profile.JPG';
+import { media } from '../../helpers/media/media';
 
 const Container = styled.div`
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
+  
+  ${media.phone`
+    padding: 0 8px;
+  `}
 `;
 
 const Story = styled.div`
@@ -22,12 +28,40 @@ const About = styled.div`
   margin: 20px 0;
 `;
 
+const Content = styled.div`
+  display: flex;
+  > img {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  
+  ${media.phone`
+    flex-direction: column;
+    > img {
+      width: 100%;
+    }
+  `}
+`;
+
+const Description = styled.div`
+  word-wrap: break-word;
+  line-height: 22px;
+  
+  ${media.phone`
+    margin-bottom: 10px;
+  `}
+`;
+
 class Body extends React.Component {
   render() {
     return (
       <Container>
         <Story>Our Story</Story>
         <About>ABOUT</About>
+        <Content>
+          <Description>Nora was born in March of 2015, since that day she is a important member in our family. She is the most lovely and obedient baby, she is afraid of strangers, normally will take at least 3 days to get acquainted with you.</Description>
+          <img src={profilePic} alt="profile"/>
+        </Content>
       </Container>
     );
   }
