@@ -59,7 +59,7 @@ class Body extends React.Component {
         <Story>Our Story</Story>
         <About>ABOUT</About>
         <Content>
-          <Description>Nora was born in March of 2015, since that day she is a important member in our family. She is the most lovely and obedient baby, she is afraid of strangers, normally will take at least 3 days to get acquainted with you.</Description>
+          <Description>Nora was born in March of 2015, since that day she had been a important member in our family. She is the most lovely and obedient baby, she is afraid of strangers, normally will take at least 3 days to get acquainted with you.</Description>
           <img src={profilePic} alt="profile"/>
         </Content>
       </Container>
