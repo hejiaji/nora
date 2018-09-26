@@ -31,8 +31,8 @@ const About = styled.div`
 const Content = styled.div`
   display: flex;
   > img {
-    max-width: 400px;
-    max-height: 400px;
+    width: 400px;
+    height: 400px;
   }
   
   ${media.phone`
@@ -46,6 +46,7 @@ const Content = styled.div`
 const Description = styled.div`
   word-wrap: break-word;
   line-height: 22px;
+  flex: 1;
   
   ${media.phone`
     margin-bottom: 10px;
