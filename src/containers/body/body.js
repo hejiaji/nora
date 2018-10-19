@@ -1,8 +1,10 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import profilePic from '../../assets/profile.JPG';
+import profilePic from '../../assets/profile.jpg';
+import profileMiniPic from '../../assets/profile-min.jpg';
 import { media } from '../../helpers/media/media';
+import { LazyImage } from '../../components/lazy-image/lazy-image';
 
 const Container = styled.div`
   max-width: 1000px;
@@ -82,7 +84,7 @@ class Body extends React.Component {
             <Description>Nora was born in March of 2015, since that day she had been a important member in our family.
               She is the most lovely and obedient baby, she is afraid of strangers, normally will take at least 3 days
               to get acquainted with you.</Description>
-            <img src={profilePic} alt="profile"/>
+            <LazyImage src={profilePic} placeholderSrc={profileMiniPic} alt="profile"  />
           </Content>
         </Container>
         <Board>
